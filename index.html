@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaMagnet</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="./newslogo4.png" alt="MediaMagnet" height="80px" width="80px">
+        <div class="inputSearch desktop">
+            <form id="searchForm" >
+                <input type="text" placeholder="Type to search..."  id="searchInput">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </form>
+        </div>
+
+        <nav class="desktop">
+            <ul>
+                <li onclick="Search('india')">India</li>
+                <li onclick="Search('world')">World</li>
+                <li onclick="Search('entertainment')">Entertainment</li>
+                <li onclick="Search('business')">Business</li>
+                <li onclick="Search('sports')">Sports</li>
+            </ul>
+        </nav>
+
+        <div class="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- for mobile -->
+        <div class="mobile hidden">
+            <nav>
+                <ul>
+                    <li onclick="Search('india')">India</li>
+                    <li onclick="Search('world')">World</li>
+                    <li onclick="Search('entertainment')">Entertainment</li>
+                    <li onclick="Search('business')">Business</li>
+                    <li onclick="Search('sports')">Sports</li>
+                </ul>
+            </nav>
+            <div class="inputSearch">
+                <form id="searchFormMob" >
+                    <input type="text" placeholder="Type to search..."  id="searchInputMob">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
